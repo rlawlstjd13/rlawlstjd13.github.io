@@ -9,4 +9,11 @@ $(function () {
         vertical: true,
         dots: true,
     });
+    $('.mopen').on('click', function () {
+        $('.gnb').toggleClass('on')
+        $(this).toggleClass('on')
+    })
 })
+
+
+
