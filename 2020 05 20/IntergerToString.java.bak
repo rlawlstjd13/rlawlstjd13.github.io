@@ -1,7 +1,0 @@
-public class IntergerToString {
-	public static void main(String[] args) {
-		String strNum = String.valueof(12345);
-		System.out.println(strNum);
-		
-	}
-}
