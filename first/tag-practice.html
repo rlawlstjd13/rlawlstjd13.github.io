@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>태그 연습하기~</title>
+    <style>
+     header{
+             background-color: #383838; 
+             border: 4px solid blue;"
+             
+           }
+
+     /* header > h1 */ 
+     #white-heading {
+                    color:#fff;
+                    text-align: center;
+                    }
+
+     .red-heading {
+                   color: red;
+                  }
+
+     nav ul {
+             display:flex;
+            }
+     nav ul li {
+            list-style: none;
+            margin-right: 20px;
+               }
+
+   .container {
+          display: flex;
+           }
+
+    main {
+       flex: 3;
+       background-color: gray;
+       }
+
+   aside {
+      flex: 1;
+      background-color: yellow;
+     }
+
+    </style>
+  </head>
+  <body>
+  <!-- 주석이 기억이 안나 --!>
+  <!--id:유일하게 class유일이아님--!>
+  <!--id: #으로 호출, class는 .으로호출--!>
+   <header>
+    <h1 id="white-heading">헤더 영역</h1>
+    <h1 class="red-heading">헤딩이 두개면?</h1>
+   </header>
+   <!--ul순서없고 ol순서있꼬--!>
+   <nav>
+    <ul>
+    <li><a href="first.html">첫번째</a></li>
+    <li><a href="second.html">두번째</a></li>
+    <li><a href="inner/third.html">세번째</a></li>
+    <li><a href="inputtest.html">네번째</a></li>
+    </ul> 
+<!--
+    <ol>
+     <li>아이템</li>
+     <li>아이템</li>
+     <li>아이템</li>
+    </ol>
+   --!>
+
+   </nav>
+
+   <div class = "container">
+   <main>
+    <h1 class="red-heading">메인 영역</h1>
+
+     <article>
+      <h2>글 내용 요약 제목</h2>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's       standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a       type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining       essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum           passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem       Ipsum.</p>    
+     </article>
+
+   </main>
+
+      <aside>사이드 영역</aside>
+
+   </div>
+
+   <footer>푸터 영역</footer>
+  </body>
+ </html>
