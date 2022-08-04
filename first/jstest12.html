@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8" />
+ <title>Page Title</title>
+ </head> 
+
+ <body>
+  <p>방가방가</p>
+ </body>
+ <script>
+// 함수 선언 후 변수에 함수를 담았기 때문에 함수에 변수를 넣어 다르게 행동? 이름: 콜백함수!!!!!!!!!!
+ function eat(act) {
+      console.log("밥 먹구");
+      act();
+}
+  let sleep = function() {
+      console.log("잠 자기");
+}
+  let study = function() {
+      alert("공부하기");
+}
+  let anotherName = eat; // 함수의 이름만 불렀으니 함수가 객체가되고 다른이름의 변수로 들어감(참조);
+  anotherName(sleep);
+
+ </script>
+
+</html>

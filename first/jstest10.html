@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8" />
+ <title>Page Title</title>
+ </head> 
+
+ <body>
+  <p>방가방가</p>
+ </body>
+  
+  <script>
+    // 이렇게 쓰면안됨.............
+    function sum(a, b) {
+      if(a > b) {
+      return a + b;
+       } else {
+           return "b 가 a 보다 큽니다";
+          } 
+     } 
+
+    function someFunc() {
+      return;
+     }
+
+    let result = sum(30, 20);
+    console.log(result);
+
+    let someResult = someFunc();
+    console.log(someResult); //return값이 없으면 undefined가 나옴.
+
+  </script>
+
+</html>

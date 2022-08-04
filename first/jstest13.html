@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8" />
+ <title>Page Title</title>
+ </head> 
+
+ <body>
+  <button id ="mybtn">눌러</button>
+  <input id = "mytext" value= "test 값" />
+ </body>
+ <script>
+// html 과 브라우저를 연결해주는 객체 DOM(자동으로있슴);
+  //function myListener(e) {
+         //alert("컷!");
+         //console.log(e);
+         //}
+
+  function myMy(e) {
+         alert("컷!");
+         console.log(e);
+          }
+
+  // 버튼을 찾기쉽게id에넣고 버튼이벤트효과넣기
+  //mybtn.onclick = myListener;
+
+  let elem = document.getElementById("mybtn");
+  elem.addEventListener("click", myMy);
+  
+  let inputText = document.getElementById("mytext");
+  
+  mybtn.addEventListener("click", function (e) {
+        console.log(inputText.value);
+});
+
+  //console.log(inputText.value);
+
+
+
+
+  //text 입력 요소, button 요소를 배치하고
+  //사용자가 입력한 내용을 콘솔 출력하기
+
+ </script>
+
+
+
+
+
+
+
+
+
+
+</html>

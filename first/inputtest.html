@@ -25,7 +25,7 @@
  <form>
   <!--label로 id에 대해 소개 submit제출 placeholder텍스트창에 힌트주기  1. 첫번째는 따로 2. 두번째는 label로 감싸고 둘다가능.--!>
   <label for="searchline">검색어</label>
-  <input id="searchline" type="text" name="searchline" placeholder="여기에 검색어를 입력해주세요."/>
+  <input id="searchline" type="text" name="searchline" placeholder="여기에 검색어를 입력해주세요." required maxlength="10"/>
 
   <label>두번째파라미터<input type="text" name="param2"/></label>
 
@@ -36,6 +36,7 @@
   <!-- 같은 name을 주면 라디오버튼작동  라벨과 마찬가지로 밸류값을 다르게  checked를 해줘야 둘다체크안해도 checked가있는데로 값이입력?--!>
   <input type="radio" name="radiochoice" value="r1" checked/>
   <input type="radio" name="radiochoice" value="r2">
+
  <!-- hidden 사용자는 보이지 않지만 숨겨져서 보내짐 --!>
   <input type="hidden" name="darktemplar" value=zeratul" />
   <input type="submit" />
